@@ -1,0 +1,180 @@
+body{
+    background-color: rgb(199, 193, 172);
+    display: flex;
+    font-family:sans-serif;
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.left-align{
+    flex-direction: row;
+    justify-content: left;
+}
+
+.center-align{
+    background-color: rgb(199, 193, 172);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #D3D3D3;
+    font-weight: bold;
+    text-shadow: 
+        -2px -2px 0 #4D4D4D,
+         2px -2px 0 #4D4D4D,
+        -2px  2px 0 #4D4D4D,
+         2px  2px 0 #4D4D4D,
+        -3px -3px 0 #4D4D4D,
+         3px -3px 0 #4D4D4D,
+        -3px  3px 0 #4D4D4D,
+         3px  3px 0 #4D4D4D;
+    font-family: 'Bodoni Moda', serif; 
+}
+
+#left{
+    width: 40%;  
+    height: 100vh;          
+    box-sizing: border-box; 
+    background-color: rgb(199, 193, 172);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    margin-right: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+#image{
+    height: 100vh;
+    width: 60vw;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    background-color: rgb(199, 193, 172);
+    object-fit: cover;
+    top: 0;
+    right: 0;
+}
+
+#logo{
+    border: 4px solid #4D4D4D;
+    border-radius: 360px;
+    object-fit: cover;
+    height: 100px;
+    width:100px;
+    top:0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 
+                inset 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+#login-title{
+    display: flex;
+    color: #4D4D4D;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+#login-form{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form input{
+    width: 95%;
+    padding: 10px;
+    margin: 3px;
+}
+
+.buttom{
+    border: 0;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+
+#buttom-container{
+    font-size: 5px;
+}
+
+#cadastrar{
+    margin-left: 1px;
+    margin-right: 40px;
+}
+
+/* tela home */
+
+#pacientes-container{
+    background-color: rgb(220, 216, 200);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 
+                inset 0 0 5px rgba(255, 255, 255, 0.3);
+    
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    width: 45%;
+}
+
+#message{
+    margin-top: 50px;
+    margin-left: 30px;
+    height: 100%;
+    top:0;
+    width: 27%;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: left;
+    height: 100%;
+    width: 27%;
+}
+
+#add-pacientes{
+    color: rgb(163, 156, 127);
+    font-size: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 30%;
+    bottom: 0;
+}
+
+.scrollable-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;         
+    max-height: 100%;   
+    overflow-y: scroll;   
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+    background: #888; /* Cor da barra de rolagem */
+    border-radius: 4px;
+}
+
+#paciente{
+    width: 100%;
+    height: 30px;
+}
